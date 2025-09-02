@@ -1,32 +1,83 @@
-📌 Churn Prediction using ANN
+# Churn & Estimated Salary Prediction
 
-Customer churn is when a customer stops doing business with a company. Predicting churn is crucial for businesses to improve retention and reduce revenue loss.
+A Streamlit web app that serves two machine learning models in one unified interface:
 
-This project uses an Artificial Neural Network (ANN) to predict whether a customer is likely to churn or stay, based on their historical data. The model is deployed as an interactive web app using Streamlit.
+- Customer Churn Prediction (classification): Estimates the probability that a customer will churn.
+- Estimated Salary Prediction (regression): Predicts a customer's estimated salary from banking profile features.
 
-🚀 Features
+The app provides a clean sidebar to switch between tasks, interactive inputs, and real-time predictions using pre-trained TensorFlow/Keras models and Scikit-learn preprocessors.
 
-🔮 Predicts customer churn probability using ANN
+## Table of Contents
+- Live Demo
+- Features
+- Tech Stack
+- Screenshots
+- Run Locally
+- License
 
-📊 Visualizes customer data and churn predictions
+## Live Demo
+Add your deployment link here when available:
 
-🌐 Deployed with Streamlit for easy access
+- Web App: https://churn-and-estimatedsalary-prediction-pgfustt389qvbsacftkub6.streamlit.app/
 
-⚡ Helps businesses take proactive actions to improve retention
+## Features
+- Unified interface for both classification and regression.
+- Simple sidebar navigation between prediction tasks.
+- Interactive, user-friendly inputs (sliders, selects, numeric fields).
+- Real-time predictions powered by cached, pre-loaded models and encoders.
+- Efficient resource loading with caching to improve responsiveness.
 
-🛠️ Tech Stack
+## Tech Stack
+- Backend/ML: Python, TensorFlow/Keras, Scikit-learn, Pandas
+- Frontend: Streamlit
+- Version Control: Git & GitHub
 
-Python 3
+## Screenshots
 
-TensorFlow / Keras – ANN Model
+### Customer Churn Prediction
+![Customer Churn Prediction Screenshot](https://github.com/user-attachments/assets/7f395676-c4cc-4d6b-92da-d15f38de20c0)
 
-Pandas, NumPy, Scikit-learn – Data preprocessing
+### Estimated Salary Prediction
+![Estimated Salary Prediction Screenshot](https://github.com/user-attachments/assets/39c459ee-4463-4a67-b079-858e69a33b82)
 
-Tensorboard – Visualization
+## Run Locally
+Follow these steps to set up and run the app locally.
 
-Streamlit – WebApp Deployment
+1) Clone the repository
 
-## Deployment
+```powershell
+# Windows PowerShell
+git clone <your-repo-url>
+cd <your-repo-folder>
+```
 
-You can try the live app here:  
-👉 [Click Here to Access the Web App](https://churn-prediction-using-ann-ddt23y47gwlk2chnyaaouw.streamlit.app/)
+2) Create and activate a virtual environment
+
+```powershell
+# Windows PowerShell
+python -m venv venv
+venv\Scripts\activate
+```
+
+```bash
+# macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+```
+
+3) Install dependencies
+
+```powershell
+pip install -r requirements.txt
+```
+
+4) Run the Streamlit app
+
+```powershell
+streamlit run app.py
+```
+
+Your browser should open automatically. If not, copy the local URL printed in the terminal into your browser.
+
+## License
+This project is licensed under the terms of the MIT License. See the `LICENSE` file for details.
